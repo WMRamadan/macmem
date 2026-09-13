@@ -26,12 +26,12 @@ MacMem provides deep visibility into Apple Silicon's Unified Memory Architecture
 
 ```
 macmem/
-├── Package.swift                  # SPM manifest declaring targets & macOS 14+ platform
+├── Package.swift                  # Manifest declaring targets & macOS 14+ platform
 ├── Sources/
-│   ├── MacMemKit/                 # Core telemetry engine (independent reusable framework)
+│   ├── MacMemKit/                 # Core telemetry engine (independent & reusable)
 │   │   ├── Models/
-│   │   │   ├── ByteFormatter.swift       # Precision byte formatting (B, KB, MB, GB, TB, %)
-│   │   │   ├── SystemMemoryOverview.swift # Reconciled memory partition (CPU + GPU = Total)
+│   │   │   ├── ByteFormatter.swift       # Byte formatting (B, KB, MB, GB, TB, %)
+│   │   │   ├── SystemMemoryOverview.swift # Memory partition (CPU + GPU = Total)
 │   │   │   ├── CPUMemoryInfo.swift       # CPU metrics, reconciliation, swap, pressure
 │   │   │   ├── GPUMemoryInfo.swift       # GPU metrics, working set, utilization, clients
 │   │   │   └── MemorySample.swift        # Time-series samples and JSON snapshot export
